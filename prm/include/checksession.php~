@@ -1,0 +1,10 @@
+<?php session_start();
+if( !session_is_registered("ulogin"))
+{
+		header("Location:admin.php");
+}
+if( !session_is_registered("utype"))
+{
+		header("Location:admin.php");
+}
+?>
